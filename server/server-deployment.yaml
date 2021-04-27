@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grpc-server-gke
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grpc-server-gke
+  template:
+    metadata:
+      labels:
+        app: grpc-server-gke
+    spec:
+      containers:
+      - name: grpc-server-gke
+        image: gcr.io/grafana-311201/grpc:latest
+        ports:
+        - containerPort: 50051
