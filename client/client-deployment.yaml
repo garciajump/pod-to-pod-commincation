@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: grpc-client-gke
-        image: gcr.io/grafana-311201/grpc-client-image:latest
+        image: gcr.io/fit-overview-314113/grpc-client-image:latest
         ports:
         - containerPort: 8080
         env: 
