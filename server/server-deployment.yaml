@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: grpc-server-gke
-        image: gcr.io/fit-overview-314113/grpc:latest
+        image: gcr.io/tough-shard-316710/grpc:latest
         ports:
         - containerPort: 50051
